@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bgimg {
+            background-image: url('https://markhorict.com/wp-content/uploads/2021/12/school-software.png');
+            height: 50%;
+            background-position: center;
+            /*background-size: cover;*/
+            position: relative;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        hr {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3em;
+            width: 40%;
+        }
+        .btn{
+            margin-top: 2em;
+            font-size: 1.4em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="bgimg">
+    <div class="topleft">
+        <p>Logo</p>
+    </div>
+    <div class="middle">
+        <h1 style="color:darkblue;font-size: 2em;">SCHOOL MANAGEMENT SYSTEM</h1>
+        <hr>
+        <a class="btn btn-info py-3 px-5" th:href="@{/instructors/register}">GET STARTED</a>
+    </div>
+</div>
+
+</body>

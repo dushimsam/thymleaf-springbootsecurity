@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>File Index</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] ,select {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+
+        button:hover {
+            opacity:1;
+        }
+
+        .btn{
+            /*width:6em;*/
+            /*height: 1.5em;*/
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 p-5">
+            <h1 class="text-info font-weight-bold">ADD NEW STUDENT</h1>
+            <form action="" class="mt-3 p-5">
+                <h1>Sign Up Form</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+
+                <label for="names"><b>Names</b></label>
+                <input type="text" placeholder="Enter Names" name="names" required>
+
+                <label for="location"><b>Location</b></label>
+                <input type="text" placeholder="Enter Student's Location" name="location" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Student's Location" name="location" required>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Course</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <p>Click  button to register new Student.</p>
+
+                <div class="btnDiv">
+                    <button type="submit" class="btn btn-primary px-5 py-2 font-weight-bold">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

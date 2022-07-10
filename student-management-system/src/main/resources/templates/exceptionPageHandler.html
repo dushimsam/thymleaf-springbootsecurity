@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>File Index</title>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 p-5">
+            <h2 class="font-weight-bold">Error Page</h2>
+
+            <p>Click on the "x" symbol to close the alert message.</p>
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong>Error!</strong> Your request was not well processed please , try again later.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
